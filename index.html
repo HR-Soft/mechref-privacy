@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MechRef – Privacy Policy</title>
+  <link rel="canonical" href="https://hrsoftware.ar/mechref-privacy/"/>
+  <link rel="alternate" hreflang="en" href="https://hrsoftware.ar/mechref-privacy/"/>
+  <link rel="alternate" hreflang="es" href="https://hrsoftware.ar/mechref-privacy/index.es.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://hrsoftware.ar/mechref-privacy/"/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -99,6 +103,23 @@
       opacity: 0;
       animation: fadeUp 0.5s ease forwards 0.3s;
     }
+
+    .lang-switch {
+      font-family: var(--mono);
+      font-size: 12px;
+      text-align: right;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards 0.05s;
+    }
+    .lang-switch a {
+      color: var(--text-dim);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+    }
+    .lang-switch a.active, .lang-switch a:hover { color: var(--accent); }
+    .lang-switch span { color: var(--text-dim); margin: 0 6px; }
 
     /* Sections */
     section {
@@ -238,16 +259,17 @@
 <div class="wrapper">
 
   <header>
+    <div class="lang-switch"><a href="index.html" class="active">EN</a><span>·</span><a href="index.es.html">ES</a></div>
     <div class="badge">Legal Document</div>
     <h1>Privacy Policy<br/><span>MechRef</span></h1>
-    <p class="meta">Last updated: May 9, 2025 &nbsp;·&nbsp; Publisher: HRSoftware</p>
+    <p class="meta">Last updated: August 16, 2026 &nbsp;·&nbsp; Publisher: HRSoftware</p>
   </header>
 
   <section>
     <h2>Overview</h2>
     <p>This Privacy Policy describes how <strong>HRSoftware</strong> ("we", "us", or "our") handles information in connection with the <strong>MechRef</strong> mobile and desktop application ("the App").</p>
     <div class="highlight">
-      <p>MechRef does not collect, store, transmit, or share any personal data. The App functions entirely on-device and does not require an account or internet connection to operate.</p>
+      <p>MechRef's engineering content runs entirely on-device and requires no account. We do not collect personal data on our own servers. On <strong>Android only</strong>, the App uses Meta (Facebook) App Events to measure our advertising — see <strong>Advertising &amp; Analytics</strong> below. The <strong>Windows</strong> version collects none of this.</p>
     </div>
   </section>
 
@@ -255,11 +277,11 @@
     <h2>Information We Do Not Collect</h2>
     <p>We do not collect any of the following:</p>
     <p>· Personal identification information (name, email, address, phone number)<br/>
-       · Device identifiers or hardware information<br/>
        · Location data<br/>
-       · Usage analytics or crash reports<br/>
+       · Contacts, messages, photos, or files<br/>
        · Browser or search history<br/>
-       · Any other personally identifiable information</p>
+       · Crash logs or diagnostics</p>
+    <p>The only data collected is the advertising and app-event data described under <strong>Advertising &amp; Analytics</strong> below, and only on Android.</p>
   </section>
 
   <section>
@@ -273,13 +295,30 @@
   </section>
 
   <section>
+    <h2>Advertising &amp; Analytics (Android only)</h2>
+    <p>On the <strong>Android</strong> version, MechRef integrates the <strong>Meta (Facebook) App Events SDK</strong> to measure the effectiveness of our advertising campaigns on Meta platforms.</p>
+    <p>Through this SDK, the following is collected and <strong>shared with Meta Platforms, Inc.</strong> for advertising attribution and analytics:</p>
+    <p>· Your device's <strong>advertising identifier</strong> (Advertising ID)<br/>
+       · Limited <strong>app-event data</strong> — app installs, app launches, and Pro purchase events (including purchase amount and currency)</p>
+    <p>This data is transmitted over a secure, encrypted connection. The <strong>Windows (Microsoft Store)</strong> version does <strong>not</strong> include this SDK and collects none of the above.</p>
+    <div class="highlight">
+      <p>You control this: you can reset or delete your Advertising ID, or opt out of ad personalization, in your device settings (Settings → Google → Ads). See how Meta uses this data in <a href="https://www.facebook.com/privacy/policy" style="color:var(--accent);">Meta's Privacy Policy</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data Deletion &amp; Your Choices</h2>
+    <p>MechRef stores no personal data on our own servers. You may request deletion of the data collected about you through the App by emailing <a href="mailto:support@hrsoftware.ar" style="color:var(--accent);">support@hrsoftware.ar</a>; we will action and forward such requests as applicable. You can also reset your Advertising ID at any time from your device settings, and manage data held by Meta through Meta's own tools.</p>
+  </section>
+
+  <section>
     <h2>Third-Party Services</h2>
-    <p>MechRef does not integrate any third-party analytics, advertising, or tracking SDKs. No data is shared with third parties.</p>
+    <p>Other than the Meta App Events SDK described above (Android only), MechRef does not integrate any other analytics, advertising, or tracking services. Payment processing is handled by Google Play or the Microsoft Store as described under In-App Purchases.</p>
   </section>
 
   <section>
     <h2>Children's Privacy</h2>
-    <p>MechRef does not knowingly collect personal information from children under 13 years of age. Since the App collects no personal data at all, it is safe for users of all ages.</p>
+    <p>MechRef is a general-audience engineering tool and is not directed to children under 13. We do not knowingly collect personal information from children, and the advertising features described above are not intended to target them.</p>
   </section>
 
   <section>
